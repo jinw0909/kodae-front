@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KODAE 디지털자산 전문 컨설턴트 과정</title>
+  <meta name="description" content="한국디지털자산교육협회 디지털자산 전문 컨설턴트 교육 과정 안내 및 수강 신청">
+
+  <!-- font start-->
+  <!-- Oxanium + Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- pretendard -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <!-- font end-->
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand footer-brand" href="#top">
+        <img src="./assets/logo.png" alt="로고" />
+      </a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#top">홈</a>
+        <a href="#about">협회 소개</a>
+        <a href="#curriculum">교육 과정</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn header-fill" href="#registration">교육 신청</a>
+        <!-- <a class="btn header-outline" href="#curriculum">수강/자격 조회</a> -->
+      </div>
+
+      <button type="button" class="mobile-menu-btn" aria-label="메뉴 열기" aria-expanded="false">
+        <img src="./assets/side-menu.svg" alt="모바일 메뉴" />
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-backdrop" data-mobile-menu-close></div>
+
+  <aside class="mobile-menu-panel">
+    <div class="mobile-menu-head">
+      <a class="mobile-menu-logo" href="#top" data-mobile-menu-close>
+        <img src="./assets/logo.png" alt="KODAE 로고">
+      </a>
+
+      <button type="button" class="mobile-menu-close" data-mobile-menu-close aria-label="메뉴 닫기">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu-nav" aria-label="모바일 메뉴">
+      <a href="#top" data-mobile-menu-close>홈</a>
+      <a href="#about" data-mobile-menu-close>협회 소개</a>
+      <a href="#curriculum" data-mobile-menu-close>교육 과정</a>
+      <a href="#benefits" data-mobile-menu-close>수강 혜택</a>
+    </nav>
+
+    <!-- <div class="mobile-menu-bottom">
+      <a href="#curriculum" class="mobile-menu-lookup" data-mobile-menu-close>
+        수강/자격 조회
+      </a>
+    </div> -->
+  </aside>
+</div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">KOREA DIGITAL ASSET EDUCATION ASSOCIATION</p>
+          <h1>디지털 경제의 미래,</h1>
+          <h1>전문 컨설턴트로 선도하다</h1>
+          <p class="lead">
+            한국디지털자산교육협회는 급변하는 글로벌 디지털 자산 시장의
+            기술, 제도, 시장 동향을 선도합니다.
+            <br />
+            체계적인 이론과 실전 분석 모델(유스메타 모델)을 통해 자산의 가치를
+            정확하게 평가하는 디지털자산 실무 전문가로 도약하세요.
+          </p>
+          <div class="hero-actions">
+            <!-- <a class="btn btn-fill btn-large" href="#registration">교육과정 신청하기</a> -->
+            <a class="btn btn-outline btn-large" href="#curriculum">상세 일정 확인하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="교육 주요 수치">
+      <div class="container metrics-grid">
+        <article>
+          <strong>8<span>h</span></strong>
+          <p>총 교육 이수</p>
+        </article>
+        <article>
+          <strong>50<span>명</span></strong>
+          <p>기수별 정원</p>
+        </article>
+        <article>
+          <strong>100<span>%</span></strong>
+          <p>실무 연계율</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">About Association</p>
+          <h2>신뢰를 기반으로 하는<br><span>비영리 교육기관</span></h2>
+          
+          <p class="body-copy">
+            한국디지털자산교육협회는 디지털 자산에 대한 대중의
+            올바른 해석과 투명한 활용 능력을 기르는 것을 공익적 목적으로
+            설립된 비영리 단체입니다.
+          </p>
+          <div class="feature-list">
+            <article>
+              <span class="icon">
+                 <img src="./assets/about-book-icon.svg" alt="아이콘">
+              </span>
+              <h3>체계적인 교육</h3>
+              <p>기초 기술 개념부터 자산 분산, 법률 규제, 리스크 대응까지 업계 최고 석학들이 직접 설계한 교안으로 지도합니다.</p>
+            </article>
+            <article>
+              <span class="icon">
+                <img src="./assets/about-data-icon.svg" alt="아이콘">
+              </span>
+              <h3>시장데이터 기반 실무 분석</h3>
+              <p>실제 시장 데이터와 사례를 바탕으로 가격 흐름, 거래량, 변동성 등 핵심 지표를 해석하는 방법을 학습합니다.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="info-card" aria-label="협회 등록 정보">
+          <h3>협회 등록 정보 <span>(Official Registration)</span></h3>
+          <dl>
+            <div><dt>단체명</dt><dd>한국디지털자산교육협회</dd></div>
+            <div><dt>고유번호</dt><dd>307-82-86128</dd></div>
+            <div><dt>대표자</dt><dd>장민</dd></div>
+            <div><dt>설립일자</dt><dd>2026년 06월 10일 (결성)</dd></div>
+            <div><dt>주요사업</dt><dd>디지털자산의 제도, 기술, 시장동향 등 교육활용</dd></div>
+            <div><dt>소재지</dt><dd>서초구 강남대로 53길 8, B1 컨퍼런스룸A</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section curriculum" id="curriculum">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Detailed Curriculum</p>
+          <h2>탄탄하게 구성된<br><span>2일 집중 과정</span></h2>
+          <p class="body-copy">각 분야 최고 전문가들이 전수하는 실전 커리큘럼입니다. 1기(주말반)와 2기(직장인 평일야간반) 중 선택하여 이수하실 수 있습니다.</p>
+        </div>
+        <div class="schedule-panel">
+          <div class="schedule-top">
+
+          <div class="course-dropdown" id="course-dropdown" data-value="course1">
+            <button
+              type="button"
+              class="course-dropdown-trigger"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+            >
+              <span class="course-dropdown-label">수강 1기 (7월 5일/12일)</span>
+              <img src="./assets/arrow.png" alt="" class="course-dropdown-arrow">
+            </button>
+
+            <ul class="course-dropdown-menu" role="listbox">
+              <li>
+                <button type="button" class="active" data-course="course1">
+                  수강 1기 (7월 5일/12일)
+                </button>
+              </li>
+              <li>
+                <button type="button" data-course="course2">
+                  수강 2기 (7월 9일/16일)
+                </button>
+              </li>
+            </ul>
+          </div>
+
+            <div class="day-tabs" aria-label="일정 탭">
+              <button type="button" class="active" data-day="day1">Day 1</button>
+              <button type="button" data-day="day2">Day 2</button>
+            </div>
+          </div>
+          <h3 id="schedule-title"></h3>
+          <div class="schedule-list" id="schedule-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="container">
+        <p class="eyebrow">Learning Journey</p>
+        <h2>자격인증 취득<br><span>4단계 프로세스</span></h2>
+        <div class="step-grid">
+          <article><strong>01</strong><h3>핵심 이론 이수</h3><p>DAY 1을 통해 디지털자산 관련 제도, 보안, 법률 동향의 필수 기본 소양을 탄탄하게 구축합니다.</p></article>
+          <article><strong>02</strong><h3>시장 분석 실습</h3><p>실제 시장 데이터와 사례를 바탕으로 핵심 지표를 해석하고 분석합니다.</p></article>
+          <article><strong>03</strong><h3>종합 평가 시험</h3><p>교육 이수 후 출석 요건(80% 이상)과 수료 평가 시험(60점 이상)을 통과하여 자격을 입증합니다.</p></article>
+          <article><strong>04</strong><h3>협회 네트워크 참여</h3><p>자격 취득 후 협회 교육, 세미나, 스터디 등 지속 학습 프로그램에 참여하며 전문 네트워크를 확장합니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits" id="benefits">
+      <div class="container">
+        <p class="eyebrow">Exclusive Benefits</p>
+        <h2>수강생에게 제공되는<br><span>풍성한 특전</span></h2>
+        <p class="body-copy benefit">교육 과정을 이수하신 분들에게 실질적인 실무 및 창업을 위한 강력한 인프라 혜택을 드립니다.</p>
+        <div class="benefit-grid">
+          <article>
+            <img src="./assets/benefit-certificate.svg" alt="아이콘">
+            <h3>공식 자격증 & 수료증</h3>
+            <p>한국디지털자산교육협회(KDAEA)의 공식 평가 인증을 통과했음을 입증하는 디지털자산 컨설턴트 자격증과 수료증을 부여합니다.</p>
+          </article>
+          <article>
+            <img src="./assets/benefit-subscription.svg" alt="아이콘">
+            <h3>블록체인투데이 1년 구독권</h3>
+            <p>블록체인 업계 전문 매체인 '블록체인투데이'의 1년 모바일/웹 온라인 정기 구독권을 제공하여 최신 트렌드를 지속적으로 학습하도록 돕습니다.</p>
+          </article>
+          <article>
+            <img src="./assets/benefit-conference.svg" alt="아이콘">
+            <h3>컨퍼런스 우선 무료참여권</h3>
+            <p>협회 주관 정기 학술대회, 핀테크 컨퍼런스, 포럼 등에 우선적으로 매칭 및 초청하며 무료 혹은 특별 할인 입장을 제공합니다.</p>
+          </article>
+          <article>
+            <img src="./assets/benefit-chart-tool.svg" alt="아이콘">
+            <h3>크립토차트 10일 이용권</h3>
+            <p>실시간 온체인 데이터 및 가상자산 시세 분석 도구인 크립토차트(키봇차트)의 10일 무료 정식 멤버십 이용 혜택을 부여합니다.</p>
+          </article>
+          <article>
+            <img src="./assets/benefit-textbook.svg" alt="아이콘">
+            <h3>공식 PDF 교재</h3>
+            <p>전문 강사들이 준비한 심화 이론 PDF 파일을 무료 제공합니다.</p>
+          </article>
+          <article>
+            <img src="./assets/benefit-discount.svg" alt="아이콘">
+            <h3>수강료 파격 혜택</h3>
+            <p>디지털자산 교육의 접근성을 높이기 위해 학생 및 유스메타 회원을 대상으로 특별 수강료 혜택을 제공합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a class="brand footer-brand" href="#top"><img src="./assets/logo.svg" alt="로고" /></a>
+        <p>
+          <span>주식회사 에이비비(ABB Co.,Ltd)</span><br>
+          대표: 정주필<br>
+          등록번호: 817-86-02211<br>
+          통신판매번호 : 2021-서울서초-3952
+        </p>
+      </div>
+      <div class="footer-edu">
+        <h3>교육과정 운영기관</h3>
+        <p class="mb-16">한국디지털자산 교육협회</p>
+        <p class="mb-16">
+          대표: 장민<br>
+          고유번호: 307-82-86128<br>
+          이메일 : blockchain@kodae.or.kr<br>
+          소재지 : 서울특별시 송파구 송이로 135,6층(가락동)<br>
+          홈페이지 : www.kodae.or.kr
+        </p>
+        <p class="warn-ment">* 해당 자격의 교육과정운영기관과 자격관리기관은 서로 별개임을 안내 드립니다.</p>
+      </div>
+      <!-- <div class="footer-qualifications">
+        <h3>자격관리(발급)기관</h3>
+        <p>OOOOOO</p>
+        <p>
+          대표 : OOO<br>
+          고유번호 : OOOOOOO<br>
+          연락처 : OOO-OOOO-OOOO<br>
+          이메일 : OOO@OOOOO<br>
+          소재지 : OOOOOOOO<br>
+          홈페이지 : OOOOOOOOO
+        </p>
+      </div> -->
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 한국디지털자산교육협회. All Rights Reserved.</p>
+      <!-- <button type="button" class="footer-policy-btn" data-policy-open>
+        이용약관 및 개인정보처리방침
+      </button> -->
+    </div>
+  </footer>
+  <div class="mobile-bottom-actions">
+    <a href="#curriculum" class="mobile-bottom-btn mobile-bottom-outline">
+      상세일정 확인하기
+    </a>
+    <!-- <a href="#registration" class="mobile-bottom-btn mobile-bottom-fill">
+      교육과정 신청하기
+    </a> -->
+  </div>
+  <div class="policy-modal" id="policy-modal" aria-hidden="true">
+    <div class="policy-modal-backdrop" data-policy-close></div>
+
+    <section
+      class="policy-modal-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="policy-modal-title"
+    >
+      <div class="policy-modal-header">
+        <div>
+          <h2 id="policy-modal-title">이용약관 및 개인정보처리방침</h2>
+        </div>
+
+        <img src="./assets/close-btn.svg" alt="Close Button" class="policy-modal-close" data-policy-close aria-label="닫기"/>
+      </div>
+
+      <div class="policy-modal-body">
+        <article>
+          <h3>1. 개인정보 수집 항목</h3>
+          <p>
+            한국디지털자산교육협회는 교육 신청 및 수강 안내를 위해 성명, 연락처,
+            이메일 주소, 희망 수강 기수, 결제 및 신청 관련 정보를 수집할 수 있습니다.
+          </p>
+        </article>
+
+        <article>
+          <h3>2. 개인정보 수집 및 이용 목적</h3>
+          <p>
+            수집된 개인정보는 교육 신청 확인, 수강 안내, 교육 일정 고지, 자격 및 수료
+            관련 안내, 문의 응대, 서비스 운영 및 관리 목적으로 이용됩니다.
+          </p>
+        </article>
+
+        <article>
+          <h3>3. 개인정보 보유 및 이용 기간</h3>
+          <p>
+            개인정보는 수집 및 이용 목적 달성 후 지체 없이 파기합니다. 단, 관계 법령에
+            따라 보관이 필요한 경우 해당 법령에서 정한 기간 동안 보관할 수 있습니다.
+          </p>
+        </article>
+
+        <article>
+          <h3>4. 개인정보 제3자 제공</h3>
+          <p>
+            협회는 이용자의 동의 없이 개인정보를 외부에 제공하지 않습니다. 다만 법령에
+            근거가 있거나 이용자가 사전에 동의한 경우에는 예외로 합니다.
+          </p>
+        </article>
+
+        <article>
+          <h3>5. 개인정보 처리 위탁</h3>
+          <p>
+            원활한 교육 운영, 결제, 안내 발송 등을 위해 필요한 경우 개인정보 처리를
+            외부 전문 업체에 위탁할 수 있으며, 이 경우 관련 법령에 따라 안전하게 관리합니다.
+          </p>
+        </article>
+
+        <article>
+          <h3>6. 이용자의 권리</h3>
+          <p>
+            이용자는 언제든지 본인의 개인정보에 대해 열람, 정정, 삭제, 처리정지를 요청할 수
+            있습니다. 요청은 협회 대표 연락처 또는 이메일을 통해 접수할 수 있습니다.
+          </p>
+        </article>
+
+        <article>
+          <h3>7. 개인정보 보호 책임자</h3>
+          <p>
+            개인정보 처리와 관련한 문의는 아래 연락처로 문의하실 수 있습니다.
+          </p>
+          <ul>
+            <li>기관명: 한국디지털자산교육협회</li>
+            <li>이메일: blockchain@kodae.or.kr</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>8. 이용약관</h3>
+          <p>
+            본 교육 과정은 협회가 안내하는 일정, 수강료, 수료 기준, 자격 안내 기준에 따라
+            운영됩니다. 신청자는 교육 신청 전 과정 안내, 환불 기준, 개인정보 수집 및 이용
+            내용을 확인하고 동의해야 합니다.
+          </p>
+        </article>
+      </div>
+    </section>
+  </div>
+  <script>
+    const scheduleData = {
+      course1: {
+        day1: {
+          title: "코인 시장, 왜 이렇게 흔들릴까?",
+          items: [
+            {
+              time: "14:10 - 15:00",
+              speaker: "장민",
+              position: "박사",
+              text: "반짝 뜨는 코인 vs 오래 남는 코인"
+            },
+            {
+              time: "15:10 - 16:00",
+              speaker: "박성준",
+              position: "교수",
+              text: "비트코인은 왜 매번 '끝났다'를 이겨냈을까?"
+            },
+            {
+              time: "16:10 - 17:00",
+              speaker: "오우정",
+              position: "이사",
+              text: "단 일주일 만에 50조가 증발했다",
+              subText: "- 코인 사기의 모든 것"
+            },
+            {
+              time: "17:10 - 18:00",
+              speaker: "정주림",
+              position: "대표",
+              text: "누군가 비트코인 매도한 날, 한 가족은 집을 팔았다",
+              subText: "- 기회와 함정을 가르는 한 끗"
+            }
+          ]
+        },
+        day2: {
+          title: "무너지는 프로젝트에는 이유가 있다",
+          items: [
+            {
+              time: "14:10 - 15:00",
+              speaker: "진현수",
+              position: "변호사",
+              text: "법과 규제가 바뀌면 왜 시장도 흔들릴까?"
+            },
+            {
+              time: "15:10 - 16:00",
+              speaker: "이재원",
+              position: "교수",
+              text: "이렇게 위험한데, 왜 디지털자산인가?",
+              subText: "- 10년 뒤에도 살아남을까?"
+            },
+            {
+              time: "16:10 - 17:00",
+              speaker: "구본우",
+              position: "M.S",
+              text: "왜 코인시장에서는 일반투자자들이 질 수밖에 없는가?",
+              subText: "- 급등·급락의 비밀"
+            },
+            {
+              time: "17:10 - 18:00",
+              speaker: "운영팀",
+              position: "",
+              text: "수료 평가(시험) 및 자격 안내"
+            }
+          ]
+        }
+      },
+
+      course2: {
+        day1: {
+          title: "코인 시장, 왜 이렇게 흔들릴까?",
+          items: [
+            {
+              time: "18:10 - 19:00",
+              speaker: "장민",
+              position: "박사",
+              text: "반짝 뜨는 코인 vs 오래 남는 코인"
+            },
+            {
+              time: "19:10 - 20:00",
+              speaker: "박성준",
+              position: "교수",
+              text: "비트코인은 왜 매번 '끝났다'를 이겨냈을까?"
+            },
+            {
+              time: "20:10 - 21:00",
+              speaker: "오우정",
+              position: "이사",
+              text: "단 일주일 만에 50조가 증발했다",
+              subText: "- 코인 사기의 모든 것"
+            },
+            {
+              time: "21:10 - 22:00",
+              speaker: "정주림",
+              position: "대표",
+              text: "누군가 비트코인 매도한 날, 한 가족은 집을 팔았다",
+              subText: "- 기회와 함정을 가르는 한 끗"
+            }
+          ]
+        },
+        day2: {
+          title: "무너지는 프로젝트에는 이유가 있다",
+          items: [
+            {
+              time: "18:10 - 19:00",
+              speaker: "진현수",
+              position: "변호사",
+              text: "법과 규제가 바뀌면 왜 시장도 흔들릴까?"
+            },
+            {
+              time: "19:10 - 20:00",
+              speaker: "이재원",
+              position: "교수",
+              text: "이렇게 위험한데, 왜 디지털자산인가?",
+              subText: "- 10년 뒤에도 살아남을까?"
+            },
+            {
+              time: "20:10 - 21:00",
+              speaker: "구본우",
+              position: "M.S",
+              text: "왜 코인시장에서는 일반투자자들이 질 수밖에 없는가?",
+              subText: "- 급등·급락의 비밀"
+            },
+            {
+              time: "21:10 - 22:00",
+              speaker: "운영팀",
+              position: "",
+              text: "수료 평가(시험) 및 자격 안내"
+            }
+          ]
+        }
+      }
+    };
+
+    const courseDropdown = document.querySelector("#course-dropdown");
+    const courseTrigger = document.querySelector(".course-dropdown-trigger");
+    const courseLabel = document.querySelector(".course-dropdown-label");
+    const courseOptions = document.querySelectorAll(".course-dropdown-menu button");
+    const tabButtons = document.querySelectorAll(".day-tabs button");
+    const scheduleTitle = document.querySelector("#schedule-title");
+    const scheduleList = document.querySelector("#schedule-list");
+
+    let selectedCourse = "course1";
+    let selectedDay = "day1";
+
+    function renderSchedule() {
+      const selectedData = scheduleData[selectedCourse][selectedDay];
+
+      tabButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.day === selectedDay);
+      });
+
+      scheduleTitle.textContent = selectedData.title;
+
+      scheduleList.innerHTML = selectedData.items
+        .map((item) => `
+          <article>
+            <time>
+              ${item.time}
+              <br>
+              <div class="speaker">
+                <span class="speaker-name">${item.speaker}</span>
+                ${item.position ? `<span class="speaker-position">${item.position}</span>` : ""}
+              </div>
+            </time>
+            <div class="vertical-line"></div>
+            <p>
+              ${item.text}
+              ${item.subText ? `<br><span>${item.subText}</span>` : ""}
+            </p>
+          </article>
+        `)
+        .join("");
+    }
+
+    courseTrigger.addEventListener("click", () => {
+      const isOpen = courseDropdown.classList.toggle("is-open");
+      courseTrigger.setAttribute("aria-expanded", isOpen);
+    });
+
+    courseOptions.forEach((option) => {
+      option.addEventListener("click", () => {
+        selectedCourse = option.dataset.course;
+        selectedDay = "day1";
+
+        courseLabel.textContent = option.textContent.trim();
+        courseDropdown.dataset.value = selectedCourse;
+
+        courseOptions.forEach((btn) => btn.classList.remove("active"));
+        option.classList.add("active");
+
+        courseDropdown.classList.remove("is-open");
+        courseTrigger.setAttribute("aria-expanded", "false");
+
+        renderSchedule();
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!courseDropdown.contains(event.target)) {
+        courseDropdown.classList.remove("is-open");
+        courseTrigger.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        courseDropdown.classList.remove("is-open");
+        courseTrigger.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedDay = button.dataset.day;
+
+        renderSchedule();
+      });
+    });
+
+    renderSchedule();
+
+    const policyModal = document.querySelector("#policy-modal");
+    const policyOpenButton = document.querySelector("[data-policy-open]");
+    const policyCloseButtons = document.querySelectorAll("[data-policy-close]");
+
+    function openPolicyModal() {
+      policyModal.classList.add("is-open");
+      policyModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+    }
+
+    function closePolicyModal() {
+      policyModal.classList.remove("is-open");
+      policyModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    }
+
+    if (policyOpenButton) {
+      policyOpenButton.addEventListener("click", openPolicyModal);
+    }
+
+    policyCloseButtons.forEach((button) => {
+      button.addEventListener("click", closePolicyModal);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && policyModal.classList.contains("is-open")) {
+        closePolicyModal();
+      }
+    });
+
+    const mobileMenu = document.querySelector("#mobile-menu");
+    const mobileMenuButton = document.querySelector(".mobile-menu-btn");
+    const mobileMenuCloseButtons = document.querySelectorAll("[data-mobile-menu-close]");
+
+    function openMobileMenu() {
+      if (!mobileMenu || !mobileMenuButton) return;
+
+      mobileMenu.classList.add("is-open");
+      mobileMenu.setAttribute("aria-hidden", "false");
+      mobileMenuButton.setAttribute("aria-expanded", "true");
+      document.body.classList.add("mobile-menu-open");
+    }
+
+    function closeMobileMenu() {
+      if (!mobileMenu || !mobileMenuButton) return;
+
+      mobileMenu.classList.remove("is-open");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      mobileMenuButton.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("mobile-menu-open");
+    }
+
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener("click", openMobileMenu);
+    }
+
+    mobileMenuCloseButtons.forEach((button) => {
+      button.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && mobileMenu?.classList.contains("is-open")) {
+        closeMobileMenu();
+      }
+    });
+  </script>
+</body>
+</html>
