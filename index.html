@@ -1061,6 +1061,15 @@
   policyTabButtons.forEach((button) => {
     button.addEventListener("click", () => {
       setPolicyTab(button.dataset.policyTab);
+
+      const policyModalBody = document.querySelector(".policy-modal-body");
+
+      if (policyModalBody) {
+        policyModalBody.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
     });
   });
 
