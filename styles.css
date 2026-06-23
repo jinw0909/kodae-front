@@ -1977,6 +1977,7 @@ body.modal-open {
 
   .two-column {
     align-items: center;
+    gap: 32px;
   }
 
   .about-top {
@@ -2198,6 +2199,10 @@ body.modal-open {
     font-style: normal;
     font-weight: 500;
     line-height: 142.857%;
+  }
+
+  .about-top {
+    width: 95%;
   }
 
   .info-card {
