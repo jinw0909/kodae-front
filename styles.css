@@ -395,8 +395,7 @@ h2 span {
 .info-card,
 .form-card,
 .schedule-list article,
-.step-grid article,
-.benefit-grid article {
+.step-grid article {
   display: flex;
   min-width: 588px;
   padding: 56px;
@@ -715,14 +714,10 @@ h2 span {
   align-items: flex-start;
 
   padding: 34px 30px;
-  gap: 16px;
-
+  gap: 24px;
   border-radius: 8px;
-  border: 0.5px solid rgba(0, 191, 197, 0.75);
-
-  background: rgba(4, 17, 27, 0.72);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  border: 0.25px solid #00BFC5;
+  background: #04111B;
 }
 
 .benefit-grid .icon {
@@ -1159,26 +1154,27 @@ legend {
 
 .policy-modal-body {
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #798B9D rgba(121, 139, 157, 0.20);
-  padding: 5px 0;
 }
 
 /* Chrome, Edge, Safari */
 .policy-modal-body::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
 }
 
 .policy-modal-body::-webkit-scrollbar-track {
-  border-radius: 50px;
-  background: rgba(121, 139, 157, 0.20);
+  background: transparent;
 }
 
 .policy-modal-body::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background: #798B9D;
+  background-color: #798B9D;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
 
+.policy-modal-body::-webkit-scrollbar-thumb:hover {
+  background-color: #A1B4C9;
+}
 .policy-modal-body::-webkit-scrollbar-thumb:hover {
   border-radius: 50px;
   background: #A1B4C9;
@@ -1399,12 +1395,29 @@ body.modal-open {
   .benefit-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hero-grid {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .metrics-grid, .process-obtain, .benefits-container, .footer-grid {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 /* 1250px 이하: PC 히어로 배경 위치 보정 */
 @media (max-width: 1250px) {
   .hero {
     background-position: -10% center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    background-position: center;
   }
 }
 
@@ -1887,7 +1900,9 @@ body.modal-open {
   }
 
   .hero-grid {
-    display: block;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .hero-copy {
@@ -1932,7 +1947,10 @@ body.modal-open {
   }
 
   .vertical-line {
-    display: none;
+    width: 100%;
+    border-radius: 8px;
+    border: 0.5px solid #00BFC5;
+    background: #04111B;
   }
 
   .metrics {
@@ -1956,8 +1974,21 @@ body.modal-open {
     align-items: center;
   }
 
-  .info-card {
-    width: 75%;
+  .two-column {
+    align-items: center;
+  }
+
+  .about-top {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .feature-list-mobile, .info-card, .schedule-panel, .process-obtain, .benefits-container {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .info-card div {
@@ -2009,7 +2040,6 @@ body.modal-open {
   .schedule-list p {
     padding: 18px 0 0;
     border-left: 0;
-    border-top: 1px solid var(--cyan);
   }
 
   .step-grid,
@@ -2030,6 +2060,17 @@ body.modal-open {
   .price-box strong {
     font-size: 28px;
   }
+
+  .process {
+    background:
+      url("./assets/process-mb-bg.png") top / cover  no-repeat;
+  }
+
+  .benefits {
+    background:
+      url("./assets/benefits-mb-bg.png") top / cover  no-repeat;
+  }
+
 
   /* policy modal mobile */
   .policy-modal {
@@ -2111,6 +2152,40 @@ body.modal-open {
     height: 52px;
     font-size: 16px;
   }
+
+  .step-grid,
+  .benefit-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 4px;
+  }
+
+  .step-grid article,
+  .benefit-grid article {
+    flex: 0 0 78%;
+    width: auto;
+    min-width: 0;
+
+    scroll-snap-align: start;
+  }
+
+  .step-grid::-webkit-scrollbar,
+  .benefit-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .step-grid,
+  .benefit-grid {
+    scrollbar-width: none;
+  }
 }
 
 /* 420px 이하: 작은 모바일 */
@@ -2179,6 +2254,10 @@ body.modal-open {
 
   .day-tabs {
     margin: auto;
+  }
+
+  .feature-list-mobile, .info-card, .schedule-panel {
+    width: 95%;
   }
 }
 
