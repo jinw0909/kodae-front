@@ -1441,7 +1441,7 @@ body.modal-open {
     align-items: flex-start;
   }
 
-  .btn.btn-outline.btn-large {
+  .hero-actions {
     display: none;
   }
 
