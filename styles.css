@@ -238,6 +238,9 @@ select {
   margin-bottom: 16px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
 
 .mb-32 {
   margin-bottom: 32px;
@@ -884,7 +887,36 @@ legend {
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-co-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-co-info p {
+  color: var(--muted);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.footer-co-info p span {
+  color: var(--muted);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  font-weight: 600;
 }
 
 .footer-brand img {
@@ -906,19 +938,6 @@ legend {
   margin-bottom: 0px;
 }
 
-.footer-contact p {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: .5rem;
-}
-
-.contact-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .site-footer p {
   color: var(--muted);
   font-family: Pretendard;
@@ -937,7 +956,7 @@ legend {
   line-height: 125%; 
 }
 
-.warn-ment {
+.footer-right-wrap .warn-ment {
   color: var(--text);
   font-family: Pretendard;
   font-size: 14px;
@@ -1187,11 +1206,11 @@ legend {
 }
 
 .policy-modal-body::-webkit-scrollbar-thumb:hover {
-  background-color: #A1B4C9;
+  background-color: var(--muted);
 }
 .policy-modal-body::-webkit-scrollbar-thumb:hover {
   border-radius: 50px;
-  background: #A1B4C9;
+  background: var(--muted);
 }
 
 .policy-modal.is-open {
@@ -1744,7 +1763,7 @@ body.modal-open {
     display: flex;
     align-items: center;
 
-    color: #A1B4C9;
+    color: var(--muted);
     font-family: Pretendard, sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -1812,8 +1831,6 @@ body.modal-open {
     display: flex;
     flex-direction: column;
   }
-
-
 
   /* policy modal tablet */
   .policy-modal {
