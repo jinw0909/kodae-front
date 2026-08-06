@@ -5,6 +5,8 @@
   --line: rgba(86, 203, 232, 0.36);
   --text: #FAFAFA;
   --text-2: #DAE2EA;
+  --text-3: #FFF;
+  --text-dark: #04111B;
   --muted: #A1B4C9;
   --cyan: #00BFC5;
   --green: #AEFC65;
@@ -88,7 +90,6 @@ select {
   gap: 36px;
 
   color: var(--muted);
-  font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -155,6 +156,11 @@ select {
   font-size: 17px;
 }
 
+.w-100 {
+  width: 100%;
+  max-width: none;
+}
+
 .header-outline {
   display: flex;
   width: 110px;
@@ -166,7 +172,6 @@ select {
   border-radius: 4px;
   border: 1px solid var(--cyan);
   color: var(--cyan);
-  font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -275,7 +280,6 @@ h2 span {
 .body-copy {
   max-width: 486px;
   color: var(--muted);
-  font-family: Pretendard;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -322,7 +326,6 @@ h2 span {
 .metrics p {
   margin: 12px 0 0;
   color: var();
-  font-family: Pretendard;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -342,7 +345,6 @@ h2 span {
 
 .two-column h2 {
   color: var(--text-2);
-  font-family: Pretendard;
   font-style: normal;
   font-weight: 700;
   line-height: 99.995%;
@@ -374,7 +376,6 @@ h2 span {
 .contact-list h3 {
   margin-bottom: 10px;
   color: var(--text);
-  font-family: Pretendard;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -388,7 +389,6 @@ h2 span {
 .step-grid p
 {
   color: var(--text-2);
-  font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -567,7 +567,6 @@ h2 span {
 
 .schedule-list time {
   color: var(--cyan);
-  font-family: Pretendard;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -586,7 +585,6 @@ h2 span {
 
 .speaker-name {
   color: var(--text);
-  font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -595,7 +593,6 @@ h2 span {
 
 .speaker-position {
   color: var(--muted);
-  font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -605,7 +602,6 @@ h2 span {
 .schedule-list p {
   margin: 0;
   color: var(--text);
-  font-family: Pretendard;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -660,7 +656,6 @@ h2 span {
 
 .step-grid strong {
   color: var(--cyan);
-  font-family: Pretendard;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -669,7 +664,6 @@ h2 span {
 
 .step-grid h3 {
   color: var(--text);
-  font-family: Pretendard;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -678,9 +672,6 @@ h2 span {
 
 .step-grid p {
   color: var(--text-2);
-  font-family: Pretendard;
-  color: #DAE2EA;
-  font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -962,7 +953,7 @@ legend {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 142.857%;
+  line-height: 120%;
 }
 
 
@@ -1425,6 +1416,579 @@ body.modal-open {
 }
 
 
+
+.curriculum {
+  overflow: hidden;
+  padding: 100px 0;
+  color: #fff;
+  background: #010308;
+}
+
+.curriculum .curriculum-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(390px, 0.92fr);
+  align-items: start;
+  gap: 80px;
+}
+
+.curriculum .curriculum-intro {
+  min-width: 0;
+  width: 588px;
+}
+
+.curriculum .curriculum-heading .eyebrow {
+  margin: 0 0 16px;
+  color: #5fe6b2;
+  font-family: Oxanium, Pretendard, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.curriculum .curriculum-heading h2 {
+  margin: 0;
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+}
+
+.curriculum .curriculum-heading h2 span {
+  color: #00c5ce;
+}
+
+.curriculum .curriculum-heading .body-copy {
+  margin: 32px 0 0;
+  color: #a6acb7;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+}
+
+/* 성과 지표 */
+.curriculum .outcome-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 38px;
+}
+
+.curriculum .outcome-stat {
+  min-width: 0;
+  min-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculum .outcome-stat img {
+  display: block;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 후기 */
+.curriculum .reviews-section {
+  margin-top: 66px;
+}
+
+.curriculum .reviews-heading {
+  margin-bottom: 20px;
+}
+
+.curriculum .reviews-heading h3 {
+  margin: 8px 0;
+  color: var(--text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+
+.curriculum .reviews-heading h3 strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.curriculum .review-stars {
+  color: #fff5e8;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.curriculum .reviews-slider {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 4%,
+    #000 96%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 4%,
+    #000 96%,
+    transparent 100%
+  );
+}
+
+.curriculum .reviews-track {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  animation: curriculum-review-marquee 35s linear infinite;
+  will-change: transform;
+}
+
+.curriculum .reviews-slider:hover .reviews-track,
+.curriculum .reviews-slider:focus-within .reviews-track,
+.curriculum .reviews-slider.is-paused .reviews-track {
+  animation-play-state: paused;
+}
+
+.curriculum .review-card {
+  width: 298px;
+  min-height: 145px;
+  flex: 0 0 auto;
+  padding: 24px;
+  border: 1px solid #17394d;
+  border-radius: 5px;
+  background: #06141e;
+  box-sizing: border-box;
+}
+
+.curriculum .review-card h4 {
+  margin: 0 0 17px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.curriculum .review-card p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: #d1d6dc;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+@keyframes curriculum-review-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
+
+/* 얼리버드 카드 */
+.curriculum .earlybird-panel {
+  overflow: hidden;
+  border: 1px solid #0b2231;
+  background: #03111b;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.curriculum .earlybird-hero {
+  position: relative;
+  min-height: 158px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 32px;
+  background: url('./assets/earlybird-hero.png') no-repeat;
+  box-sizing: border-box;
+}
+
+.curriculum .earlybird-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.curriculum .earlybird-hero-content p {
+  margin: 0 0 7px;
+  color: var(--text);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.999px */
+}
+
+.curriculum .earlybird-hero-content strong {
+  margin-top: 8px;
+  color: var(--green);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.995%; /* 31.998px */
+}
+
+/* 이미지 없이 CSS로 표현한 시계 */
+.curriculum .earlybird-clock {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  width: 82px;
+  height: 82px;
+  transform: translateY(-50%) rotate(5deg);
+}
+
+.curriculum .earlybird-clock-body {
+  position: absolute;
+  inset: 15px;
+  border: 7px solid #a1ff35;
+  border-radius: 50%;
+  background: #edffe0;
+  box-shadow: 0 0 0 4px rgba(161, 255, 53, 0.15);
+  box-sizing: border-box;
+}
+
+.curriculum .earlybird-clock-body::before,
+.curriculum .earlybird-clock-body::after {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 5px;
+  background: #70d515;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.curriculum .earlybird-clock-body::before {
+  top: 4px;
+}
+
+.curriculum .earlybird-clock-body::after {
+  bottom: 4px;
+}
+
+.curriculum .earlybird-clock-bell {
+  position: absolute;
+  top: 6px;
+  width: 25px;
+  height: 14px;
+  border-radius: 50% 50% 20% 20%;
+  background: #a1ff35;
+}
+
+.curriculum .earlybird-clock-bell-left {
+  left: 6px;
+  transform: rotate(-30deg);
+}
+
+.curriculum .earlybird-clock-bell-right {
+  right: 6px;
+  transform: rotate(30deg);
+}
+
+.curriculum .earlybird-clock-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 2px;
+  border-radius: 999px;
+  background: #5ebd0d;
+  transform-origin: bottom;
+}
+
+.curriculum .earlybird-clock-hand-hour {
+  height: 16px;
+  transform: translateX(-50%) rotate(-60deg);
+}
+
+.curriculum .earlybird-clock-hand-minute {
+  height: 21px;
+  transform: translateX(-50%) rotate(8deg);
+}
+
+.curriculum .earlybird-content {
+  padding: 16px 32px;
+}
+
+.curriculum .earlybird-description {
+  margin: 0;
+  color: var(--text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.curriculum .earlybird-description strong {
+  color: var(--text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.curriculum .earlybird-summary {
+  margin: 32px 0;
+}
+
+.curriculum .earlybird-summary h3 {
+  margin: 4px 0 16px;
+  color: var(--text);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  letter-spacing: 0.2px;
+}
+
+.curriculum .earlybird-summary-question {
+  margin: 0;
+  color: var(--cyan);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.995%; /* 15.999px */
+}
+
+.curriculum .topic-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 0;
+  margin: 0 0 32px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.curriculum .topic-list li {
+  position: relative;
+  padding-left: 13px;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 99.995%; /* 15.999px */
+}
+
+.curriculum .topic-list li::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 13px;
+  height: 18px;
+  content: "";
+  background-image: url("./assets/curriculum-thunder.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.curriculum .earlybird-notice {
+  position: relative;
+  overflow: hidden;
+  padding: 27.5px 24px;
+  text-align: center;
+  background: url('./assets/earlybird-notice.png');
+  height: 115px;
+}
+
+
+.curriculum .earlybird-notice::before,
+.curriculum .earlybird-notice::after {
+  position: absolute;
+  top: 25px;
+  width: 65px;
+  height: 1px;
+  content: "";
+}
+
+.curriculum .earlybird-notice::before {
+  left: 8px;
+  transform: rotate(27deg);
+}
+
+.curriculum .earlybird-notice::after {
+  right: 8px;
+  transform: rotate(-27deg);
+}
+
+.curriculum .earlybird-notice p {
+  margin: 0 0 4px;
+  color: var(--text-3);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 144.444% */
+}
+
+.curriculum .earlybird-notice strong {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0px 4px;
+  color: var(--text-dark);
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 118.182% */
+  background: var(--green);
+}
+
+.curriculum .earlybird-notice span {
+  color: var(--text-3);
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 118.182% */
+}
+
+.curriculum .earlybird-footer {
+  padding: 32px;
+}
+
+.curriculum .earlybird-cautions {
+  margin: 0 0 16px;
+  padding: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 13.999px */
+  list-style: none;
+}
+
+.curriculum .earlybird-cautions li::before {
+  margin-right: 4px;
+  content: "※";
+}
+
+
+
+@media (max-width: 1100px) {
+  .curriculum .curriculum-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .curriculum .earlybird-panel {
+    width: 100%;
+    max-width: 620px;
+  }
+
+  .curriculum .review-card {
+    width: 310px;
+  }
+}
+
+@media (max-width: 767px) {
+  .curriculum {
+    padding: 70px 0;
+  }
+
+  .curriculum .curriculum-layout {
+    gap: 44px;
+  }
+
+  .curriculum .curriculum-heading h2 {
+    font-size: 38px;
+  }
+
+  .curriculum .curriculum-heading .body-copy {
+    margin-top: 24px;
+  }
+
+  .curriculum .curriculum-heading .body-copy br {
+    display: none;
+  }
+
+  .curriculum .outcome-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .curriculum .outcome-stat {
+    min-height: auto;
+  }
+
+  .curriculum .outcome-stat img {
+    max-width: 130px;
+  }
+
+  .curriculum .reviews-section {
+    margin-top: 48px;
+  }
+
+  .curriculum .review-card {
+    width: 270px;
+    min-height: 165px;
+  }
+
+  .curriculum .earlybird-hero {
+    padding-right: 125px;
+  }
+
+  .curriculum .earlybird-clock {
+    right: 25px;
+    transform: translateY(-50%) rotate(5deg) scale(0.85);
+  }
+
+  .curriculum .earlybird-content,
+  .curriculum .earlybird-footer {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .curriculum .topic-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .curriculum .curriculum-heading h2 {
+    font-size: 34px;
+  }
+
+  .curriculum .outcome-stats {
+    margin-top: 30px;
+  }
+
+  .curriculum .outcome-stat img {
+    max-width: 110px;
+  }
+
+  .curriculum .earlybird-hero {
+    padding: 20px 110px 20px 18px;
+  }
+
+  .curriculum .earlybird-clock {
+    right: 14px;
+    transform: translateY(-50%) rotate(5deg) scale(0.72);
+  }
+
+  .curriculum .earlybird-notice strong {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curriculum .reviews-track {
+    animation-play-state: paused;
+  }
+
+  .curriculum .earlybird-button {
+    transition: none;
+  }
+}
+
 /* 태블릿 */
 
 
@@ -1487,6 +2051,10 @@ body.modal-open {
 @media (max-width: 1200px) {
   .hero {
     background-position: center;
+  }
+
+  .footer-grid, .footer-co-info {
+    width: 90%;
   }
 }
 
@@ -1975,6 +2543,15 @@ body.modal-open {
     width: min(100% - 32px, var(--max));
   }
 
+  .footer-grid {
+    gap: 16px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 16px;
+  }
+
   .hero {
     padding: 96px 0 300px;
 
@@ -2284,6 +2861,11 @@ body.modal-open {
   .benefit-discount {
     align-items: center;
   }
+  
+  .curriculum .curriculum-intro {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 /* 420px 이하: 작은 모바일 */
@@ -2364,6 +2946,10 @@ body.modal-open {
 
   .footer-co-info {
     margin: 24px auto;
+  }
+
+  .curriculum .curriculum-intro {
+    width: 95%;
   }
 }
 
