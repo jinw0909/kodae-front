@@ -1484,7 +1484,7 @@ body.modal-open {
   display: block;
   width: 100%;
   max-width: 160px;
-  height: auto;
+  height: 60px;
   object-fit: contain;
 }
 
